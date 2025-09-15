@@ -1,5 +1,5 @@
 h1 {
-font-family: 'Nimbus Mono PS', 'Courier New', monospace;
+  font-family: "Asimovian", system-ui, sans-serif;
 font-weight: bold;
   border-style: solid;
   border-width: 2px;
@@ -15,18 +15,18 @@ text-align: center;
 }
 
 #first, #second, #third {
-font-family: 'Nimbus Mono PS', 'Courier New', monospace;
 font-weight: bold;
 text-align: center;
 color: white;
   border: 3px solid white;
   margin:  50px;
   padding: 50px;
-  
+  background-color: black;
 }
 
 #lorem1, #lorem2, #lorem3 {
     font-weight: normal;
+    background-color: black;
 }
 
 .valorant, .overwatch, .minecraft {
@@ -34,7 +34,31 @@ color: white;
 }
 
 body {
-  background-color: black;
+  animation: rotate-bg-color 10s infinite;
+  font-family: "Bitcount Grid Double", system-ui, sans-serif;
+  font-weight: 100; /* use 100–900 */
+}
+
+
+@keyframes rotate-bg-color {
+  0% {
+    background-color: steelblue;
+  }
+  20% {
+    background-color: red;
+  }
+  40% {
+    background-color: orange;
+  }
+  60% {
+    background-color: yellow;
+  }
+  80% {
+    background-color: green;
+  }
+  100% {
+    background-color: blue;
+  }
 }
 
 a {
@@ -44,12 +68,11 @@ a {
   color: white;
   text-decoration: none;
   padding: 20px;
-  
+  background-color: black;
 }
 
 a:hover {
   background-color: gray; 
   border: 3px solid white;
   transform: scale(0.9);
-  width: 30vw;
 }
